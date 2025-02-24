@@ -13,7 +13,3 @@ function showSecondPage() {
     letter.classList.add('open');
   }, 1000);
 }
-
-// Add event listener to the cake (if needed)
-const cake = document.querySelector('.cake');
-cake.addEventListener('click', showSecondPage);
