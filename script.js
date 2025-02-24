@@ -10,8 +10,16 @@ function showSecondPage() {
   // Show the letter after 1 second
   setTimeout(() => {
     letter.classList.remove('hidden');
-    letter.classList.add('open');
   }, 1000);
+}
+
+function openLetter() {
+  const secondPage = document.querySelector('.second-page');
+  const thirdPage = document.querySelector('.third-page');
+
+  // Hide the second page and show the third page
+  secondPage.classList.add('hidden');
+  thirdPage.classList.remove('hidden');
 }
 
 // Add event listener to the cake
