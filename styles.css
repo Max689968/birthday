@@ -63,28 +63,6 @@ body, html {
   100% { transform: translateY(-20vh); opacity: 1; }
 }
 
-/* Poppers */
-.poppers {
-  position: absolute;
-  top: 50%;
-  left: 150%;
-  transform: translate(50%, 50%);
-  width: 300px; /* Larger poppers */
-  height: auto;
-  animation: popPoppers 1s ease-out forwards;
-}
-
-.poppers-image {
-  width: 300%;
-  height: auto;
-}
-
-@keyframes popPoppers {
-  0% { transform: scale(10); opacity: 3; }
-  50% { transform: scale(10); opacity: 3; }
-  100% { transform: scale(1.5); }
-}
-
 /* Cake */
 .cake-container {
   text-align: center;
@@ -113,8 +91,8 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 900px;
-  height: 900px;
+  width: 1200px;
+  height: 1080px;
   background: white;
   border: 3px solid #000;
   border-radius: 10px;
