@@ -37,19 +37,19 @@ body, html {
 /* Balloons */
 .balloons {
   position: absolute;
-  width: 150px; /* Larger balloons */
+  width: 200px; /* Increased size */
   height: auto;
   animation: floatBalloons 5s linear forwards;
 }
 
 .left-balloons {
   left: 10%;
-  top: -100%;
+  bottom: -100%;
 }
 
 .right-balloons {
   right: 10%;
-  top: -100%;
+  bottom: -100%;
 }
 
 .balloons-image {
@@ -58,8 +58,8 @@ body, html {
 }
 
 @keyframes floatBalloons {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(100vh); }
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-20vh); }
 }
 
 /* Poppers */
@@ -68,7 +68,7 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150px; /* Larger poppers */
+  width: 250px; /* Increased size */
   height: auto;
   animation: popPoppers 1s ease-out forwards;
 }
@@ -80,8 +80,8 @@ body, html {
 
 @keyframes popPoppers {
   0% { transform: scale(0); }
-  50% { transform: scale(1.5); }
-  100% { transform: scale(1); }
+  50% { transform: scale(1.8); }
+  100% { transform: scale(1.5); }
 }
 
 /* Cake */
@@ -117,19 +117,19 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 150px;
+  transform: translate(-50%, -50%) scale(0);
+  width: 300px;
+  height: 200px;
   background: white;
   border: 2px solid #000;
   border-radius: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: floatLetter 2s ease-in-out infinite;
-  display: flex; /* Ensure it's initially visible */
+  animation: openLetter 1.5s ease-in-out forwards;
 }
 
 .letter-content {
@@ -137,18 +137,31 @@ body, html {
   color: #000;
 }
 
-@keyframes floatLetter {
-  0%, 100% { transform: translate(-50%, -10px); }
-  50% { transform: translate(-50%, 10px); }
+@keyframes openLetter {
+  0% { transform: translate(-50%, -50%) scale(0); }
+  100% { transform: translate(-50%, -50%) scale(1); }
 }
 
-/* Third Page (Letter Content) */
+/* Third Page (Letter Opening Animation & Content) */
 .letter-open-content {
   background: white;
   padding: 20px;
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: unfoldLetter 1.5s ease-in-out forwards;
+}
+
+@keyframes unfoldLetter {
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
 }
 
 .letter-open-content h1 {
