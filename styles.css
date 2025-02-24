@@ -19,7 +19,7 @@ body, html {
 }
 
 .first-page {
-  background: url('images/cat1.png') no-repeat center center/cover;
+  background: url('images/cat1.png') no-repeat center center/95% auto;
 }
 
 .second-page {
@@ -37,19 +37,19 @@ body, html {
 /* Balloons */
 .balloons {
   position: absolute;
-  width: 200px; /* Increased size */
+  width: 250px; /* Increased size */
   height: auto;
   animation: floatBalloons 5s linear forwards;
 }
 
 .left-balloons {
   left: 10%;
-  bottom: -100%;
+  bottom: -150px;
 }
 
 .right-balloons {
   right: 10%;
-  bottom: -100%;
+  bottom: -150px;
 }
 
 .balloons-image {
@@ -58,8 +58,9 @@ body, html {
 }
 
 @keyframes floatBalloons {
-  0% { transform: translateY(100vh); }
-  100% { transform: translateY(-20vh); }
+  0% { transform: translateY(100vh); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-20vh); opacity: 1; }
 }
 
 /* Poppers */
@@ -68,7 +69,7 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 250px; /* Increased size */
+  width: 300px; /* Increased size */
   height: auto;
   animation: popPoppers 1s ease-out forwards;
 }
@@ -79,8 +80,8 @@ body, html {
 }
 
 @keyframes popPoppers {
-  0% { transform: scale(0); }
-  50% { transform: scale(1.8); }
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(2); opacity: 1; }
   100% { transform: scale(1.5); }
 }
 
@@ -106,22 +107,15 @@ body, html {
   margin-top: 20px;
 }
 
-/* Cat Background */
-.cat-background {
-  width: 50%; /* Smaller cat image */
-  height: auto;
-}
-
 /* Letter */
 .letter {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(1);
   width: 300px;
   height: 200px;
   background: url('images/letter-closed.png') no-repeat center center/cover;
-  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
