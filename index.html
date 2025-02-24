@@ -9,36 +9,29 @@
 <body>
   <div class="background">
     <!-- Balloons -->
-    <div class="balloon red"></div>
-    <div class="balloon blue"></div>
-    <div class="balloon green"></div>
+    <div class="balloons">
+      <img src="images/balloons.png" alt="Balloons" class="balloons-image">
+    </div>
+
+    <!-- Poppers -->
+    <div class="poppers">
+      <img src="images/poppers.png" alt="Poppers" class="poppers-image">
+    </div>
 
     <!-- Cake -->
     <div class="cake-container">
-      <div class="cake" onclick="showLetter()">
-        <div class="layer top"></div>
-        <div class="layer middle"></div>
-        <div class="layer bottom"></div>
-        <div class="candle"></div>
-      </div>
+      <img src="images/cake.png" alt="Cake" class="cake" onclick="showCat()">
       <div class="banner">Happy Birthday!</div>
     </div>
 
-    <!-- Cat and Letter -->
-    <div class="cat-letter hidden">
-      <div class="cat">
-        <div class="ear left"></div>
-        <div class="ear right"></div>
-        <div class="face">
-          <div class="eye left"></div>
-          <div class="eye right"></div>
-          <div class="nose"></div>
-          <div class="mouth"></div>
-        </div>
-      </div>
-      <div class="letter" onclick="openLetter()">
-        <div class="letter-content">Hello</div>
-      </div>
+    <!-- Cat -->
+    <div class="cat hidden">
+      <img src="images/cat.png" alt="Cat" class="cat-image">
+    </div>
+
+    <!-- Letter -->
+    <div class="letter hidden">
+      <div class="letter-content">Hello</div>
     </div>
   </div>
 
