@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="background">
+  <!-- First Page -->
+  <div class="page first-page">
     <!-- Balloons -->
-    <div class="balloons">
+    <div class="balloons left-balloons">
+      <img src="images/balloons.png" alt="Balloons" class="balloons-image">
+    </div>
+    <div class="balloons right-balloons">
       <img src="images/balloons.png" alt="Balloons" class="balloons-image">
     </div>
 
@@ -20,14 +24,15 @@
 
     <!-- Cake -->
     <div class="cake-container">
-      <img src="images/cake.png" alt="Cake" class="cake" onclick="showCat()">
+      <img src="images/cake.png" alt="Cake" class="cake" onclick="showSecondPage()">
       <div class="banner">Happy Birthday!</div>
     </div>
+  </div>
 
-    <!-- Cat -->
-    <div class="cat hidden">
-      <img src="images/cat.png" alt="Cat" class="cat-image">
-    </div>
+  <!-- Second Page -->
+  <div class="page second-page hidden">
+    <!-- Cat Background -->
+    <img src="images/cat2.png" alt="Cat Background" class="cat-background">
 
     <!-- Letter -->
     <div class="letter hidden">
