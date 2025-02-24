@@ -123,13 +123,13 @@ body, html {
   background: white;
   border: 2px solid #000;
   border-radius: 10px;
-  display: none; /* Hidden by default */
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: floatLetter 2s ease-in-out infinite;
+  display: flex; /* Ensure it's initially visible */
 }
 
 .letter-content {
@@ -168,5 +168,5 @@ body, html {
 
 /* Hidden Class */
 .hidden {
-  display: none;
+  display: none !important; /* Ensure it's properly hidden and revealed */
 }
