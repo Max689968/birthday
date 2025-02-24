@@ -1,11 +1,13 @@
-function showLetter() {
-  const catLetter = document.querySelector('.cat-letter');
-  catLetter.style.display = 'block'; // Show the cat and letter
-}
-
-function openLetter() {
+function showCat() {
+  const cat = document.querySelector('.cat');
   const letter = document.querySelector('.letter');
-  const letterContent = document.querySelector('.letter-content');
-  letter.classList.add('open'); // Add the open animation
-  letterContent.style.opacity = 1; // Show the letter content
+
+  // Show the cat
+  cat.classList.remove('hidden');
+
+  // After 1 second, show the letter
+  setTimeout(() => {
+    letter.classList.remove('hidden');
+    letter.classList.add('open');
+  }, 1000);
 }
