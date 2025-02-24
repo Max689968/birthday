@@ -120,21 +120,19 @@ body, html {
   transform: translate(-50%, -50%) scale(0);
   width: 300px;
   height: 200px;
-  background: white;
-  border: 2px solid #000;
-  border-radius: 10px;
+  background: url('images/letter-closed.png') no-repeat center center/cover;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: openLetter 1.5s ease-in-out forwards;
 }
 
-.letter-content {
-  font-size: 1.5rem;
-  color: #000;
+.letter.opened {
+  background: url('images/letter-open.png') no-repeat center center/cover;
+  width: 350px;
+  height: 250px;
 }
 
 @keyframes openLetter {
