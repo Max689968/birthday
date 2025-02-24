@@ -19,11 +19,11 @@ body, html {
 }
 
 .first-page {
-  background: url('images/cat1.png') no-repeat center center/95% auto;
+  background: url('images/cat1.png') no-repeat center center/90% auto;
 }
 
 .second-page {
-  background: url('images/cat2.png') no-repeat center center/cover;
+  background: url('images/cat2.png') no-repeat center center/90% auto;
 }
 
 .third-page {
@@ -43,12 +43,12 @@ body, html {
 }
 
 .left-balloons {
-  left: 10%;
+  left: 30%;
   bottom: -150px;
 }
 
 .right-balloons {
-  right: 10%;
+  right: 30%;
   bottom: -150px;
 }
 
@@ -68,20 +68,20 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, 50%);
   width: 300px; /* Larger poppers */
   height: auto;
   animation: popPoppers 1s ease-out forwards;
 }
 
 .poppers-image {
-  width: 100%;
+  width: 300%;
   height: auto;
 }
 
 @keyframes popPoppers {
-  0% { transform: scale(0); opacity: 0; }
-  50% { transform: scale(2); opacity: 1; }
+  0% { transform: scale(10); opacity: 3; }
+  50% { transform: scale(10); opacity: 3; }
   100% { transform: scale(1.5); }
 }
 
@@ -130,8 +130,8 @@ body, html {
 }
 
 .letter.opened {
-  width: 450px;
-  height: 350px;
+  width: 950px;
+  height: 1350px;
 }
 
 @keyframes openLetter {
