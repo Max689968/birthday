@@ -8,19 +8,34 @@
 </head>
 <body>
   <div class="background">
-    <!-- Balloons and Party Poppers Animation -->
-    <div class="balloons"></div>
-    <div class="poppers"></div>
+    <!-- Balloons -->
+    <div class="balloon red"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon green"></div>
 
-    <!-- Cake and Banner -->
+    <!-- Cake -->
     <div class="cake-container">
-      <img src="images/cake.png" alt="Birthday Cake" class="cake" onclick="showLetter()">
+      <div class="cake" onclick="showLetter()">
+        <div class="layer top"></div>
+        <div class="layer middle"></div>
+        <div class="layer bottom"></div>
+        <div class="candle"></div>
+      </div>
       <div class="banner">Happy Birthday!</div>
     </div>
 
     <!-- Cat and Letter -->
     <div class="cat-letter hidden">
-      <img src="images/cat.png" alt="Cat" class="cat">
+      <div class="cat">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+        <div class="face">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="nose"></div>
+          <div class="mouth"></div>
+        </div>
+      </div>
       <div class="letter" onclick="openLetter()">
         <div class="letter-content">Hello</div>
       </div>
