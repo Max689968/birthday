@@ -23,7 +23,7 @@ body, html {
 }
 
 .second-page {
-  background: url('images/cat2.png') no-repeat center center/contain;
+  background: url('images/cat2.png') no-repeat center center/cover;
 }
 
 .third-page {
@@ -37,7 +37,7 @@ body, html {
 /* Balloons */
 .balloons {
   position: absolute;
-  width: 250px; /* Increased size */
+  width: 250px; /* Larger balloons */
   height: auto;
   animation: floatBalloons 5s linear forwards;
 }
@@ -69,7 +69,7 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px; /* Increased size */
+  width: 300px; /* Larger poppers */
   height: auto;
   animation: popPoppers 1s ease-out forwards;
 }
@@ -113,8 +113,8 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 350px;
-  height: 250px;
+  width: 400px;
+  height: 300px;
   background: white;
   border: 3px solid #000;
   border-radius: 10px;
@@ -125,11 +125,13 @@ body, html {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: openLetter 1.5s ease-in-out forwards;
+  background-image: url('images/letter.png');
+  background-size: cover;
 }
 
 .letter.opened {
-  width: 400px;
-  height: 300px;
+  width: 450px;
+  height: 350px;
 }
 
 @keyframes openLetter {
@@ -140,12 +142,12 @@ body, html {
 /* Third Page (Letter Opening Animation & Content) */
 .letter-open-content {
   background: white;
-  padding: 40px;
+  padding: 50px;
   border: 3px solid #000;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 450px;
-  height: 350px;
+  width: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,7 +182,11 @@ body, html {
   font-weight: bold;
 }
 
-.letter-open-content ul li:nth-child(n+1):nth-child(-n+19)::before {
+.letter-open-content ul {
+  counter-reset: list-item;
+}
+
+.letter-open-content ul li::before {
   content: counter(list-item) ". ";
   counter-increment: list-item;
 }
