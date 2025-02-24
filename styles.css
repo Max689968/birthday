@@ -115,7 +115,7 @@ body, html {
   background: #fff;
   border: 2px solid #000;
   border-radius: 10px;
-  display: none; /* Hidden by default */
+  display: flex; /* Ensure the letter is a flex container */
   justify-content: center;
   align-items: center;
   text-align: center;
