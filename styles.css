@@ -67,7 +67,7 @@ body, html {
 .poppers {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 150%;
   transform: translate(50%, 50%);
   width: 300px; /* Larger poppers */
   height: auto;
@@ -113,8 +113,8 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 400px;
-  height: 300px;
+  width: 900px;
+  height: 900px;
   background: white;
   border: 3px solid #000;
   border-radius: 10px;
