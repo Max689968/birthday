@@ -1,11 +1,13 @@
-function showCat() {
-  const cat = document.querySelector('.cat');
+function showSecondPage() {
+  const firstPage = document.querySelector('.first-page');
+  const secondPage = document.querySelector('.second-page');
   const letter = document.querySelector('.letter');
 
-  // Show the cat
-  cat.classList.remove('hidden');
+  // Hide the first page and show the second page
+  firstPage.classList.add('hidden');
+  secondPage.classList.remove('hidden');
 
-  // After 1 second, show the letter
+  // Show the letter after 1 second
   setTimeout(() => {
     letter.classList.remove('hidden');
     letter.classList.add('open');
