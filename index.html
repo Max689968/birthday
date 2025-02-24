@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background">
+    <!-- Balloons and Party Poppers Animation -->
+    <div class="balloons"></div>
+    <div class="poppers"></div>
+
+    <!-- Cake and Banner -->
+    <div class="cake-container">
+      <img src="images/cake.png" alt="Birthday Cake" class="cake" onclick="showLetter()">
+      <div class="banner">Happy Birthday!</div>
+    </div>
+
+    <!-- Cat and Letter -->
+    <div class="cat-letter hidden">
+      <img src="images/cat.png" alt="Cat" class="cat">
+      <div class="letter" onclick="openLetter()">
+        <div class="letter-content">Hello</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
