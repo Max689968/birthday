@@ -26,6 +26,14 @@ body, html {
   background: url('images/cat2.png') no-repeat center center/cover;
 }
 
+.third-page {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* Balloons */
 .balloons {
   position: absolute;
@@ -110,25 +118,23 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px; /* Wider letter */
-  height: 200px; /* Taller letter */
-  background: white; /* White background */
-  border: 2px solid #000; /* Black border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 200px;
+  height: 150px;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 10px;
   display: none; /* Hidden by default */
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px; /* Padding inside the letter */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: floatLetter 2s ease-in-out infinite;
 }
 
 .letter-content {
   font-size: 1.5rem;
   color: #000;
-  opacity: 0;
-  transition: opacity 0.5s ease;
 }
 
 @keyframes floatLetter {
@@ -136,9 +142,28 @@ body, html {
   50% { transform: translate(-50%, 10px); }
 }
 
-/* Show Letter Content */
-.letter.open .letter-content {
-  opacity: 1;
+/* Third Page (Letter Content) */
+.letter-open-content {
+  background: white;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.letter-open-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.letter-open-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.letter-open-content li {
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
 
 /* Hidden Class */
